@@ -1,3 +1,9 @@
+# Importando o módulo time
+import time
+
+# Início da contagem do tempo
+tempo_inicial = time.time()
+
 # As listas que serão manipuladas
 lista1 = []
 lista2 = []
@@ -34,3 +40,8 @@ for c in range(metade_n_termos, n_termos):
 # Saída das listas
 print(lista1)
 print(lista2)
+
+# Fim da contagem de tempo
+tempo_final = time.time()
+tempo_total = tempo_final - tempo_inicial
+print(f"O tempo de processo foi de {tempo_total}")

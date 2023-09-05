@@ -1,3 +1,9 @@
+# Importando o módulo time
+import time
+
+# Ínicio do tempo
+tempo_inicial = time.time()
+
 # As listas e a verificação de seu tamanho
 lista1 = []
 lista2 = []
@@ -32,3 +38,8 @@ if lista1 == lista2:
 
 else:
     print("A lista 2 NÃO é uma permutação da lista 1")
+
+# Fim da contagem
+tempo_final = time.time()
+tempo_total = tempo_final - tempo_inicial
+print(f"O tempo de processo foi de {tempo_total}")
